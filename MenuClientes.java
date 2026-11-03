@@ -17,10 +17,6 @@ static Scanner scanner = new Scanner(System.in);
             
             while (!scanner.hasNextInt()) {
                 System.out.print("Por favor, ingresa un numero valido: ");
-                scanner.next();
-            }
-            opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar el buffer
 
 //Aca ustedes agregan sus case de cada parte que les toco, nomas ya agregue mi parte de clientes
             switch (opcion) {
