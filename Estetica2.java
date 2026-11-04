@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Estetica2 {
 
     static Scanner scanner = new Scanner(System.in);
-//Clientes
+// Parte de clientes
     static String clientes() {
 
         String nombreCliente;
