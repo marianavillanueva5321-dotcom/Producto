@@ -6,6 +6,27 @@ public class Estetica2 {
 //Clientes
 
 // Servicios
+  static double servicios(int opcionServicio, int cantidad, double subtotal) {
+
+        double precio = 0;
+
+        switch (opcionServicio) {
+            case 1:
+                precio = 200;
+                break;
+            case 2:
+                precio = 92;
+                break;
+            case 3:
+                precio = 350;
+                break;
+            case 4:
+                precio = 150;
+                break;
+        }
+
+        return subtotal + (precio * cantidad);
+    }
 
 // Calculos
      static double Calculos(double subtotal) {
