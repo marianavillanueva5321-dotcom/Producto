@@ -75,8 +75,43 @@ public class Estetica2 {
     }
 // reporte
 
+static void Reporte(String nombreCliente, String fechaCita,
+            int cantidadCortes, int cantidadShampoos,
+            int cantidadTintes, int cantidadPeinados,
+            double subtotal, double descuento, double iva,
+            double totalPagar, int opcionPago) {
+
+        if (subtotal == 0) {
+            System.out.println("Primero debes elegir al menos un servicio");
+        } else {
+
+            System.out.println("===== ESTETICA DOÑA GERTRUDIS CHAN =====");
+            System.out.println("Ticket de servicio");
+            System.out.println("Cliente: " + nombreCliente);
+            System.out.println("Fecha: " + fechaCita);
+            System.out.println("Cortes de cabello: " + cantidadCortes);
+            System.out.println("Shampoos especiales: " + cantidadShampoos);
+            System.out.println("Tintes de cabello: " + cantidadTintes);
+            System.out.println("Peinados: " + cantidadPeinados);
+            System.out.println("Subtotal: $" + subtotal);
+            System.out.println("Descuento: $" + descuento);
+            System.out.println("IVA (16%): $" + iva);
+            System.out.println("Total a pagar: $" + totalPagar);
+
+            if (opcionPago == 1) {
+                System.out.println("Forma de pago: Tarjeta");
+            } else if (opcionPago == 2) {
+                System.out.println("Forma de pago: Efectivo");
+            }
+        }
+    }
+
 // salir
 
+  static void Salir() {
+        System.out.println("¡Gracias por visitar Estética Doña Gertrudis Chan!");
+    }
+    
 //main
 public static void main(String[] args) {
 
