@@ -3,9 +3,24 @@ import java.util.Scanner;
 public class Estetica2 {
 
     static Scanner scanner = new Scanner(System.in);
-//Clientes
+    
+    static String clientes() {
 
-// Servicios
+        String nombreCliente;
+        String fechaCita;
+
+        System.out.println("===== REGISTRO DE CLIENTE =====");
+        System.out.print("Ingrese su nombre: ");
+        nombreCliente = scanner.nextLine();
+
+        System.out.print("Ingrese la fecha (dia/mes/año): ");
+        fechaCita = scanner.nextLine();
+
+        System.out.println("Datos del cliente registrados\n");
+
+        return nombreCliente;
+    }
+
   static double servicios(int opcionServicio, int cantidad, double subtotal) {
 
         double precio = 0;
@@ -26,6 +41,7 @@ public class Estetica2 {
         }
 
         return subtotal + (precio * cantidad);
+    
     }
 
 // Calculos
