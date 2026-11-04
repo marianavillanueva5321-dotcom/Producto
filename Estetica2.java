@@ -4,29 +4,23 @@ public class Estetica2 {
 
     static Scanner scanner = new Scanner(System.in);
 //Clientes
+    static String clientes() {
 
-// Servicios
-  static double servicios(int opcionServicio, int cantidad, double subtotal) {
+        String nombreCliente;
+        String fechaCita;
 
-        double precio = 0;
+        System.out.println("===== REGISTRO DE CLIENTE =====");
+        System.out.print("Ingrese su nombre: ");
+        nombreCliente = scanner.nextLine();
 
-        switch (opcionServicio) {
-            case 1:
-                precio = 200;
-                break;
-            case 2:
-                precio = 92;
-                break;
-            case 3:
-                precio = 350;
-                break;
-            case 4:
-                precio = 150;
-                break;
-        }
+        System.out.print("Ingrese la fecha (dia/mes/año): ");
+        fechaCita = scanner.nextLine();
 
-        return subtotal + (precio * cantidad);
+        System.out.println("Datos del cliente registrados\n");
+
+        return nombreCliente;
     }
+
 
 // Calculos
      static double Calculos(double subtotal) {
